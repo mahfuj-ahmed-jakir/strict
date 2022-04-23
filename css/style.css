@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1115px;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.clr {
+    clear: both;
+}
+
+/* *******************common css end******************* */
+
+/* *******************menu part start******************* */
+.menu_part{
+    background: #fff;
+    height: 100px;
+}
+
+.menu_cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo_div{
+    flex-basis: 15%;
+    line-height: 100px;
+}
+
+.menu_item{
+    flex-basis: 85%;
+    line-height: 100px;
+}
+
+.menu_item ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_item ul li a{
+    margin-left: 45px;
+    color: #222222;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+/* *******************menu part end******************* */
+
+/* *******************banner part start******************* */
+#banner_part{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 215px 0 90px 0;
+}
+
+.banner_cont{
+    text-align: center;
+}
+
+.banner_cont h1{
+    font-size: 120px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.banner_cont hr{
+    width: 50%;
+    margin-left: 25%;
+    height: 2px;
+    color: #15a4fa;
+}
+
+.banner_cont p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    padding: 45px 0 70px 0;
+}
+
+.banner_cont a{
+    padding: 20px 35px;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 175px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.banner_cont i{
+    font-size: 35px;
+    color: #fff;
+}
+
+.banner_cont a span{
+    height: 100%;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear 0.3s;
+}
+
+.banner_cont a:hover span{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.banner_cont a:hover{
+    color: #15a4fa;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+}
+/* *******************banner part end******************* */
+
+/* *******************note part start******************* */
+#note_part{
+    background: #f6f9f9;
+    padding: 80px 0 110px 0;
+}
+
+.note_cont{
+    text-align: center;
+}
+
+.note_cont h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #2d3950;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 30px;
+}
+
+.note_cont p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #999999;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 30px;
+}
+/* *******************note part end******************* */
+
+/* ******************item part start******************* */
+#item_part{
+    background: #fff;
+    padding: 65px 0 65px 0;
+}
+
+.item_cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item_div {
+	text-align: center;
+	width: 27.95%;
+	margin: 0 30px 0 30px;
+}
+
+.item_div i{
+    color: #fff;
+    background: rgb(72,186,255);
+    border-radius: 2px;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+.item_div h5{
+    padding: 30px 0 25px 0;
+    color: #2d3950;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+
+.item_div p{
+    color: #999999;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+/* *******************item part end******************* */
+
+/* *******************gallery part start******************* */
+#gallery_part{
+    background: #f6f9f9;
+    padding: 80px 0 115px 0;
+}
+
+.gallery_cont{
+    text-align: center;
+}
+
+.gallery_cont h5{
+    color: #2d3950;
+    font-size: 41px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.gallery_cont p{
+    color: #909090;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 15px 0 80px 0;
+}
+
+.gallery_div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img_box {
+	position: relative;
+    width: 351px;
+    overflow: hidden;
+}
+
+.img_box img{
+    width: 100%;
+    transition: all linear 0.3s;
+}
+
+.img_box .overlay{
+    position: absolute;
+    background: rgba(76, 140, 212, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+
+.img_box .overlay a{
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 43%;
+    text-align: center;
+}
+
+.img_box:hover .overlay{
+    transform: scale(1);
+}
+
+.img_box .overlay a:first-child{
+    margin-left: 50px;
+}
+
+.img_box{
+    margin-right: 30px;
+}
+
+.img_box:nth-child(3), .img_box:nth-child(6){
+    margin-right: 0;
+}
+
+.img_box:nth-child(1), .img_box:nth-child(2), .img_box:nth-child(3){
+    margin-bottom: 30px;
+}
+
+.img_box:hover img{
+    transform: scale(1.2);
+}
+/* *******************gallery part end******************* */
+
+/* *******************form part start******************* */
+#form_part{
+    background: url(../images/formImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0 95px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#form_part::after{
+    background: rgba(22, 13, 13, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+}
+
+.form_div form{
+    width: 100%;
+}
+
+.form_divv{
+    text-align: center;
+    justify-content: center;
+}
+
+.form_div{
+    text-align: center;
+    width: 555px;
+}
+
+.form_div h3{
+    font-size: 41px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+.form_div p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #999999;
+    padding: 20px 0 50px 0;
+}
+
+input{
+    padding: 20px;
+    width: 100%;
+    background: none;
+    border: 1px solid #999999;
+    color: #999999;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+/* *******************form part end******************* */
+
+/* *******************menu part start******************* */
+/* *******************menu part end******************* */
